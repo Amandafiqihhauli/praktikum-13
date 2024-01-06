@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form kelola Keuangan</title>
+    <link rel="stylesheet" href="praktik_uts.css">
+</head>
+<body>
+    <fieldset>
+
+        <legend>
+            <p>Kelola Ruangan</p>
+        </legend>
+
+       <table>
+        <tr>
+            <td>
+                <label for="nama">Nama Ruangan:</label>
+            </td>
+            <td>
+                <input type="text" name="nama" id="nama">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="kategori">Kategori:</label>
+            </td>
+            <td>
+                <select name="kategori" id="kategori">
+                    <option value="aula">Aula</option>
+                    <option value="lab.komputer">Lab Komputer</option>
+                    <option value="kelas">Kelas</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="deskripsi">Deskripsi Ruangan:</label>
+            </td>
+            <td>
+                <textarea name="deskripsi" id="deskripsi" cols="33" rows="4"></textarea>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="fasilitas">Fasilitas Ruangan:</label>
+            </td>
+            <td>
+                <input type="checkbox" value="sound.system">Sound System
+                <input type="checkbox" value="wifi">Wifi
+                <input type="checkbox" value="layar.besar">Layar Besar
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="kapasitas">Kapasitas:</label>
+            </td>
+            <td>
+                <input type="text" name="kapasitas" id="kapasitas">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="lokasi">Lokasi Ruangan:</label>
+            </td>
+            <td>
+                <input type="text" name="lokasi" id="lokasi">
+            </td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>
+                <button type="submit" class="submit">Simpan</button>
+                <button type="reset" class="reset">Reset</button>
+            </td>
+        </tr>
+       </table>
+    </fieldset>
+    
+</body>
+</html>

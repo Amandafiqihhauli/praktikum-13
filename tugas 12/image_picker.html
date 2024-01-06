@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>
+
+    <style>
+        body{
+            background-image: url("encanto.jpg");
+            background-position: inherit;
+            background-size: cover;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;  
+        }
+
+        select{
+            padding: 10px;
+            border-radius: 20px;
+            background-color: pink;
+            font-size: 25px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="background-color: lightcoral; padding: 10px; border-radius: 20px;">Anggota Keluarga Madrigal</h1>
+        <select onchange="keluargaMadrigal()" id="list_gambar">
+            <option value="">--Pilih--</option>
+            <option value="mirabel">Mirabel</option>
+            <option value="abuela">Abuela</option>
+            <option value="julieta_agustin">Julieta dan Agustin</option>
+            <option value="isabela">Isabela</option>
+            <option value="luisa">Luisa</option>
+            <option value="pepa_felix">Pepa dan Felix</option>
+            <option value="antonio">Antonio</option>
+            <option value="camilo">Camilo</option>
+            <option value="dolores">Dolores</option>
+            <option value="bruno">Bruno</option>
+        </select>
+    </div>
+
+    <div style="display: flex; flex-direction: column; align-items: center; margin: 50px;">
+        <img id="image" src="" alt="" >
+    </div>
+
+    <script>
+        function keluargaMadrigal(){
+            let image_picker = document.getElementById("list_gambar").value
+            let gambar = document.getElementById("image")
+
+            if (image_picker == "mirabel"){
+                gambar.src = "mirabel.jpg"
+                gambar.width = 300
+                gambar.alt = "pict"
+                alert("Hallo Mirabel is here")
+            } 
+            else if(image_picker == "abuela"){
+                gambar.src = "abuela.jpg"
+                gambar.width = 300
+                gambar.alt = "pict"
+                alert("Hallo Abuela is here")
+            }
+            else if(image_picker == "julieta_agustin"){
+                gambar.src = "julieta_agustin.jpg"
+                gambar.width = 300
+                gambar.alt = "pict"
+                alert("Hallo Julieta and Agustin are here")
+            }
+            else if(image_picker == "isabela"){
+                gambar.src = "isabela.jpg"
+                gambar.width = 300
+                gambar.alt = "pict"
+                alert("Hallo Isabela is here")
+            }
+            else if(image_picker == "luisa"){
+                gambar.src = "luisa.jpg"
+                gambar.width = 300
+                gambar.alt = "pict"
+                alert("Hallo Luisa is here")
+            }
+            else if(image_picker == "pepa_felix"){
+                gambar.src = "pepa_felix.jpg"
+                gambar.width = 300
+                gambar.alt = "pict"
+                alert("Hallo Pepa and Felix are here")
+            }
+            else if(image_picker == "antonio"){
+                gambar.src = "antonio.jpg"
+                gambar.width = 300
+                gambar.alt = "pict"
+                alert("Hallo Antonio is here")
+            }
+            else if(image_picker == "camilo"){
+                gambar.src = "camilo.jpg"
+                gambar.width = 300
+                gambar.alt = "pict"
+                alert("Hallo Camilo is here")
+            }
+            else if(image_picker == "dolores"){
+                gambar.src = "dolores.jpg"
+                gambar.width = 300
+                gambar.alt = "pict"
+                alert("Hallo Dolores is here")
+            }
+            else if(image_picker == "bruno"){
+                gambar.src = "bruno.jpg"
+                gambar.width = 300
+                gambar.alt = "pict"
+                alert("Hallo Bruno is here")
+            }
+            else {
+                alert("coba lagi")
+            }
+            
+
+        }
+    </script>
+</body>
+</html>
